@@ -9,34 +9,34 @@
     display: grid;
     justify-content: center;
     position: relative;
-    height: auto;
+    height: 100vh;
     width: 250px;
 }
 
 .right-panel {
-    background-color: lightpink;
     display: grid;
     position: relative;
-    height: auto;
+    height: 100vh;
     grid-template-columns: auto;
     justify-content: center;
 }
 
 .layer2-right-container {
     display: grid;
-    grid-row-gap: 5px;
+    padding: 10px;
+    grid-row-gap: 10px;
     grid-template-columns: auto;
+    /* grid-template-rows: auto; */
+    /* align-items: stretch; */
     position: relative;
-    width: 700px;
+    width: 800px;
     height: auto;
     top: 30px;
-    background-color: lightskyblue;
     z-index: 2;
 }
 
 .layer2-left-container {
     position: relative;
-    background-color: rgb(255, 248, 155);
     width: 200px;
     height: auto;
     top: 30px;
@@ -45,32 +45,28 @@
 
 .pd-10 {
     padding: 10px;
-    bottom: 0px;
 }
-
-
 
 .components {
     position: relative;
     z-index: 3;
     width: 100%;
     height: auto;
-    background-color: lightslategray;
-    height: fit-content;
+    align-items: stretch;
+    /* height: fit-content; */
 }
 
-.btm-0{
-    bottom: 0px;
+.p-tb-10 {
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
-
 
 .components-div {
     display: flex;
     justify-content: space-between;
-    
 }
 
-.border-radius-15 {
+.b-radius-15 {
     border-radius: 15px;
 }
 
@@ -82,18 +78,60 @@
     right: 10px;
 }
 
+.scroll {
+    overflow-y: scroll;
+}
+
+.offer-table {
+    border-collapse: separate;
+    border-spacing: 0px 5px;
+    border-radius: 15px;
+    /* 수평 간격 10px, 수직 간격 5px */
+}
+
 .offer-table td:last-child {
     position: relative;
     padding: 5px;
     display: flex;
-    align-items: center;
+    justify-content: end;
 }
 
 .offer-table td:last-child .btn {
     position: relative;
     white-space: nowrap;
 }
-.table th, .table td {
+
+.table th,
+.table td {
     text-align: center;
     vertical-align: middle;
+}
+
+hr {
+    width: 100%;
+    height: 3px;
+    /* 높이 설정 */
+    background-color: rgb(77, 72, 72);
+    /* 배경색 설정 */
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    vertical-align: middle;
+}
+
+.font {
+    font-size: 20px;
+    font-weight: 700;
+}
+.skill-tag{
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+    
+}
+.tag {
+    display: inline;
 }
