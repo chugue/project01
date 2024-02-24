@@ -1,0 +1,99 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 250px auto;
+    height: 100vh;
+}
+
+.left-panel {
+    background-color: lightcyan;
+    display: grid;
+    justify-content: center;
+    position: relative;
+    height: auto;
+    width: 250px;
+}
+
+.right-panel {
+    background-color: lightpink;
+    display: grid;
+    position: relative;
+    height: auto;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+
+.layer2-right-container {
+    display: grid;
+    grid-row-gap: 5px;
+    grid-template-columns: auto;
+    position: relative;
+    width: 700px;
+    height: auto;
+    top: 30px;
+    background-color: lightskyblue;
+    z-index: 2;
+}
+
+.layer2-left-container {
+    position: relative;
+    background-color: rgb(255, 248, 155);
+    width: 200px;
+    height: auto;
+    top: 30px;
+    z-index: 2;
+}
+
+.pd-10 {
+    padding: 10px;
+    bottom: 0px;
+}
+
+
+
+.components {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: auto;
+    background-color: lightslategray;
+    height: fit-content;
+}
+
+.btm-0{
+    bottom: 0px;
+}
+
+
+.components-div {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.border-radius-15 {
+    border-radius: 15px;
+}
+
+.width-100 {
+    width: 100px;
+}
+
+.right-10 {
+    right: 10px;
+}
+
+.offer-table td:last-child {
+    position: relative;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.offer-table td:last-child .btn {
+    position: relative;
+    white-space: nowrap;
+}
+.table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+}
